@@ -1,0 +1,22 @@
+{
+  "synthetic": true,
+  "scenario": "Synthetic indicator of uncertain relevance",
+  "candidate_indicators": [
+    {
+      "type": "ipv4-addr",
+      "value": "198.51.100.22",
+      "first_seen": "2026-11-01T09:00:00Z",
+      "source_claim_id": "CLAIM-DEMO-01"
+    }
+  ],
+  "observations": [
+    {
+      "id": "OBS-DEMO-01",
+      "statement": "An external report claims traffic to this address, without samples."
+    }
+  ],
+  "enrichment_results": [],
+  "asset_context": "No corresponding telemetry supplied",
+  "observation_window": "2026-11-01/2026-11-05",
+  "sharing_policy": "Synthetic, unrestricted"
+}

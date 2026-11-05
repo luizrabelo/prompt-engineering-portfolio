@@ -1,0 +1,94 @@
+schema_version: '1.0'
+collection: cti
+language: en
+entries:
+  - id: CTI-001
+    title: "Priority Intelligence Requirements Planner"
+    path: requirements/cti-001-priority-intelligence-requirements.md
+    category: cti/requirements
+    modality: text_analysis
+    technique: decision-driven-collection-planning
+    target_models: [ChatGPT, Claude, Gemini, local-LLM]
+    version: "1.0.0"
+    parameters: [business_decisions, crown_jewels, threat_landscape, existing_visibility, stakeholders, collection_limits]
+  - id: CTI-002
+    title: "Source Reliability & Analytic Confidence"
+    path: assessment/cti-002-source-reliability-confidence.md
+    category: cti/assessment
+    modality: text_analysis
+    technique: provenance-and-corroboration-analysis
+    target_models: [ChatGPT, Claude, Gemini, local-LLM]
+    version: "1.0.0"
+    parameters: [intelligence_reports, source_metadata, publication_dates, corroborating_evidence, collection_context, tlp_markings]
+  - id: CTI-003
+    title: "Indicator Qualification & Enrichment"
+    path: indicators/cti-003-indicator-qualification-enrichment.md
+    category: cti/indicators
+    modality: text_analysis
+    technique: contextual-ioc-disposition
+    target_models: [ChatGPT, Claude, Gemini, local-LLM]
+    version: "1.0.0"
+    parameters: [candidate_indicators, observations, enrichment_results, asset_context, observation_window, sharing_policy]
+  - id: CTI-004
+    title: "ATT&CK TTP Intelligence Mapper"
+    path: tradecraft/cti-004-ttp-intelligence-mapping.md
+    category: cti/tradecraft
+    modality: text_analysis
+    technique: behavior-grounded-attck-analysis
+    target_models: [ChatGPT, Claude, Gemini, local-LLM]
+    version: "1.0.0"
+    parameters: [report_excerpts, observed_behaviors, attack_version, platforms, environment_visibility, detection_inventory]
+  - id: CTI-005
+    title: "Attribution Skeptic & Competing Hypotheses"
+    path: assessment/cti-005-attribution-competing-hypotheses.md
+    category: cti/assessment
+    modality: text_analysis
+    technique: hypothesis-competition-bias-control
+    target_models: [ChatGPT, Claude, Gemini, local-LLM]
+    version: "1.0.0"
+    parameters: [campaign_reports, behavioral_overlap, infrastructure_overlap, temporal_evidence, alternative_actors, confidence_policy]
+  - id: CTI-006
+    title: "Campaign Clustering & Activity Correlation"
+    path: campaigns/cti-006-campaign-clustering.md
+    category: cti/campaigns
+    modality: text_analysis
+    technique: time-bounded-evidence-graph
+    target_models: [ChatGPT, Claude, Gemini, local-LLM]
+    version: "1.0.0"
+    parameters: [report_collection, normalized_indicators, ttp_evidence, time_windows, entity_identifiers, analyst_constraints]
+  - id: CTI-007
+    title: "Exploitation Risk Prioritizer (KEV/EPSS/Exposure)"
+    path: vulnerabilities/cti-007-exploitation-risk-prioritizer.md
+    category: cti/vulnerabilities
+    modality: text_analysis
+    technique: exposure-centric-vulnerability-triage
+    target_models: [ChatGPT, Claude, Gemini, local-LLM]
+    version: "1.0.0"
+    parameters: [asset_vulnerabilities, asset_criticality, internet_exposure, kev_snapshot, epss_snapshot, cvss_data, mitigation_options]
+  - id: CTI-008
+    title: "Intelligence-to-Detection Requirements"
+    path: detection/cti-008-intelligence-to-detection-requirements.md
+    category: cti/detection
+    modality: text_analysis
+    technique: testable-defensive-detection-translation
+    target_models: [ChatGPT, Claude, Gemini, local-LLM]
+    version: "1.0.0"
+    parameters: [intelligence_claims, environment, telemetry_schema, detection_stack, existing_rules, false_positive_constraints]
+  - id: CTI-009
+    title: "Audience-Specific Threat Brief & Dissemination"
+    path: dissemination/cti-009-audience-threat-briefing.md
+    category: cti/dissemination
+    modality: text_analysis
+    technique: tlp-gated-multi-audience-synthesis
+    target_models: [ChatGPT, Claude, Gemini, local-LLM]
+    version: "1.0.0"
+    parameters: [validated_intelligence, intended_audience, required_decisions, tlp_marking, approved_distribution, reporting_window]
+  - id: CTI-010
+    title: "STIX 2.1 Package Quality Gate"
+    path: exchange/cti-010-stix-21-quality-gate.md
+    category: cti/exchange
+    modality: text_analysis
+    technique: schema-aware-threat-intel-validation
+    target_models: [ChatGPT, Claude, Gemini, local-LLM]
+    version: "1.0.0"
+    parameters: [candidate_stix_bundle, stix_version, identity_and_markings, object_provenance, sharing_scope, validation_tool_results]

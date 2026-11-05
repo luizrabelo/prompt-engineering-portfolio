@@ -1,0 +1,33 @@
+{
+  "synthetic": true,
+  "scenario": "Unverified cloud administration report",
+  "incoming_report": {
+    "id": "REPORT-DEMO-01",
+    "received_at": "2026-11-03T10:15:00Z",
+    "text": "An operator noticed an unexpected admin login to the demo tenancy; screenshots pending."
+  },
+  "reporter_context": "internal technical contact",
+  "constituency": "demo corporate systems",
+  "asset_inventory": [
+    {
+      "asset": "CLOUD-DEMO-A",
+      "criticality": "high"
+    }
+  ],
+  "case_policy": {
+    "classifications": [
+      "event",
+      "suspected-incident",
+      "confirmed-incident",
+      "insufficient-information"
+    ],
+    "escalation": "Notify on-call coordinator on confirmed high-impact evidence"
+  },
+  "available_evidence": [
+    {
+      "id": "EVID-DEMO-01",
+      "type": "reported observation only",
+      "timestamp_utc": "2026-11-03T10:10:00Z"
+    }
+  ]
+}

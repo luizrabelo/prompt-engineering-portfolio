@@ -1,0 +1,20 @@
+{
+  "synthetic": true,
+  "scenario": "Internal draft during unconfirmed investigation",
+  "approved_facts": [
+    {
+      "id": "FACT-DEMO-01",
+      "statement": "Access to a demo service is being investigated."
+    }
+  ],
+  "stakeholder_groups": [
+    "internal incident commander",
+    "IT operations"
+  ],
+  "communication_policy": "No external statements without legal and communications approvals",
+  "tlp_marking": "TLP:AMBER+STRICT",
+  "approved_channels": [
+    "internal restricted ticket"
+  ],
+  "update_cadence": "on substantive evidence change"
+}

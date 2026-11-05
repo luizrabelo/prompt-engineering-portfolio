@@ -1,0 +1,94 @@
+schema_version: '1.0'
+collection: csirt
+language: en
+entries:
+  - id: CSIRT-001
+    title: "Incident Intake & Qualification"
+    path: intake/csirt-001-incident-intake-qualification.md
+    category: csirt/intake
+    modality: text_analysis
+    technique: evidence-based-case-normalization
+    target_models: [ChatGPT, Claude, Gemini, local-LLM]
+    version: "1.0.0"
+    parameters: [incoming_report, reporter_context, constituency, asset_inventory, case_policy, available_evidence]
+  - id: CSIRT-002
+    title: "Severity & Escalation Matrix"
+    path: governance/csirt-002-severity-escalation-matrix.md
+    category: csirt/governance
+    modality: text_analysis
+    technique: policy-constrained-severity-assessment
+    target_models: [ChatGPT, Claude, Gemini, local-LLM]
+    version: "1.0.0"
+    parameters: [incident_facts, severity_policy, critical_services, affected_population, service_dependencies, escalation_contacts]
+  - id: CSIRT-003
+    title: "Incident Commander Decision Brief"
+    path: command/csirt-003-incident-commander-decision-brief.md
+    category: csirt/command
+    modality: text_analysis
+    technique: decision-brief-with-evidence-links
+    target_models: [ChatGPT, Claude, Gemini, local-LLM]
+    version: "1.0.0"
+    parameters: [situation_report, incident_objectives, response_options, business_constraints, risk_tolerance, decision_authority]
+  - id: CSIRT-004
+    title: "Stakeholder Communication & TLP Planner"
+    path: communications/csirt-004-stakeholder-communication-tlp.md
+    category: csirt/communications
+    modality: text_analysis
+    technique: audience-and-sharing-boundary-planning
+    target_models: [ChatGPT, Claude, Gemini, local-LLM]
+    version: "1.0.0"
+    parameters: [approved_facts, stakeholder_groups, communication_policy, tlp_marking, approved_channels, update_cadence]
+  - id: CSIRT-005
+    title: "Evidence & Chain-of-Custody Planner"
+    path: forensics/csirt-005-evidence-custody-planner.md
+    category: csirt/forensics
+    modality: text_analysis
+    technique: forensic-integrity-and-provenance
+    target_models: [ChatGPT, Claude, Gemini, local-LLM]
+    version: "1.0.0"
+    parameters: [case_scope, evidence_inventory, collection_methods, storage_controls, custody_policy, legal_hold_constraints]
+  - id: CSIRT-006
+    title: "War Room Coordination & Action Tracker"
+    path: coordination/csirt-006-war-room-action-tracker.md
+    category: csirt/coordination
+    modality: text_analysis
+    technique: dependency-aware-incident-coordination
+    target_models: [ChatGPT, Claude, Gemini, local-LLM]
+    version: "1.0.0"
+    parameters: [incident_objectives, team_roles, current_actions, pending_decisions, evidence_updates, meeting_cadence]
+  - id: CSIRT-007
+    title: "Third-Party & Supplier Incident Coordination"
+    path: coordination/csirt-007-third-party-incident-coordination.md
+    category: csirt/coordination
+    modality: text_analysis
+    technique: shared-responsibility-incident-interfaces
+    target_models: [ChatGPT, Claude, Gemini, local-LLM]
+    version: "1.0.0"
+    parameters: [third_party_report, contractual_requirements, shared_responsibility, affected_integrations, approved_contacts, data_handling_policy]
+  - id: CSIRT-008
+    title: "Notification Obligations Triage"
+    path: governance/csirt-008-notification-obligations-triage.md
+    category: csirt/governance
+    modality: text_analysis
+    technique: jurisdiction-aware-legal-issue-spotting
+    target_models: [ChatGPT, Claude, Gemini, local-LLM]
+    version: "1.0.0"
+    parameters: [incident_facts, jurisdictions, data_categories, contracts_and_policies, applicable_regulations, notification_owners]
+  - id: CSIRT-009
+    title: "CSIRT Tabletop Exercise Designer"
+    path: readiness/csirt-009-csirt-tabletop-exercise.md
+    category: csirt/readiness
+    modality: text_analysis
+    technique: objective-driven-exercise-design
+    target_models: [ChatGPT, Claude, Gemini, local-LLM]
+    version: "1.0.0"
+    parameters: [exercise_objectives, organization_profile, scenario_constraints, participants_roles, available_playbooks, duration]
+  - id: CSIRT-010
+    title: "Post-Incident Review & Improvement Backlog"
+    path: improvement/csirt-010-post-incident-review-backlog.md
+    category: csirt/improvement
+    modality: text_analysis
+    technique: blameless-evidence-led-retrospective
+    target_models: [ChatGPT, Claude, Gemini, local-LLM]
+    version: "1.0.0"
+    parameters: [incident_timeline, action_register, service_impact, control_outcomes, team_feedback, improvement_constraints]

@@ -571,3 +571,185 @@ entries:
     target_models: [Gemini, ChatGPT]
     version: "1.0.0"
     parameters: [foto, produto, fundo, luz, cor_referencia, formato]
+
+# CSIRT and CTI operational prompt collections
+  - id: CSIRT-001
+    title: "Incident Intake & Qualification"
+    path: prompts/csirt/intake/csirt-001-incident-intake-qualification.md
+    category: csirt/intake
+    modality: text_analysis
+    technique: evidence-based-case-normalization
+    target_models: [ChatGPT, Claude, Gemini, local-LLM]
+    version: "1.0.0"
+    parameters: [incoming_report, reporter_context, constituency, asset_inventory, case_policy, available_evidence]
+  - id: CSIRT-002
+    title: "Severity & Escalation Matrix"
+    path: prompts/csirt/governance/csirt-002-severity-escalation-matrix.md
+    category: csirt/governance
+    modality: text_analysis
+    technique: policy-constrained-severity-assessment
+    target_models: [ChatGPT, Claude, Gemini, local-LLM]
+    version: "1.0.0"
+    parameters: [incident_facts, severity_policy, critical_services, affected_population, service_dependencies, escalation_contacts]
+  - id: CSIRT-003
+    title: "Incident Commander Decision Brief"
+    path: prompts/csirt/command/csirt-003-incident-commander-decision-brief.md
+    category: csirt/command
+    modality: text_analysis
+    technique: decision-brief-with-evidence-links
+    target_models: [ChatGPT, Claude, Gemini, local-LLM]
+    version: "1.0.0"
+    parameters: [situation_report, incident_objectives, response_options, business_constraints, risk_tolerance, decision_authority]
+  - id: CSIRT-004
+    title: "Stakeholder Communication & TLP Planner"
+    path: prompts/csirt/communications/csirt-004-stakeholder-communication-tlp.md
+    category: csirt/communications
+    modality: text_analysis
+    technique: audience-and-sharing-boundary-planning
+    target_models: [ChatGPT, Claude, Gemini, local-LLM]
+    version: "1.0.0"
+    parameters: [approved_facts, stakeholder_groups, communication_policy, tlp_marking, approved_channels, update_cadence]
+  - id: CSIRT-005
+    title: "Evidence & Chain-of-Custody Planner"
+    path: prompts/csirt/forensics/csirt-005-evidence-custody-planner.md
+    category: csirt/forensics
+    modality: text_analysis
+    technique: forensic-integrity-and-provenance
+    target_models: [ChatGPT, Claude, Gemini, local-LLM]
+    version: "1.0.0"
+    parameters: [case_scope, evidence_inventory, collection_methods, storage_controls, custody_policy, legal_hold_constraints]
+  - id: CSIRT-006
+    title: "War Room Coordination & Action Tracker"
+    path: prompts/csirt/coordination/csirt-006-war-room-action-tracker.md
+    category: csirt/coordination
+    modality: text_analysis
+    technique: dependency-aware-incident-coordination
+    target_models: [ChatGPT, Claude, Gemini, local-LLM]
+    version: "1.0.0"
+    parameters: [incident_objectives, team_roles, current_actions, pending_decisions, evidence_updates, meeting_cadence]
+  - id: CSIRT-007
+    title: "Third-Party & Supplier Incident Coordination"
+    path: prompts/csirt/coordination/csirt-007-third-party-incident-coordination.md
+    category: csirt/coordination
+    modality: text_analysis
+    technique: shared-responsibility-incident-interfaces
+    target_models: [ChatGPT, Claude, Gemini, local-LLM]
+    version: "1.0.0"
+    parameters: [third_party_report, contractual_requirements, shared_responsibility, affected_integrations, approved_contacts, data_handling_policy]
+  - id: CSIRT-008
+    title: "Notification Obligations Triage"
+    path: prompts/csirt/governance/csirt-008-notification-obligations-triage.md
+    category: csirt/governance
+    modality: text_analysis
+    technique: jurisdiction-aware-legal-issue-spotting
+    target_models: [ChatGPT, Claude, Gemini, local-LLM]
+    version: "1.0.0"
+    parameters: [incident_facts, jurisdictions, data_categories, contracts_and_policies, applicable_regulations, notification_owners]
+  - id: CSIRT-009
+    title: "CSIRT Tabletop Exercise Designer"
+    path: prompts/csirt/readiness/csirt-009-csirt-tabletop-exercise.md
+    category: csirt/readiness
+    modality: text_analysis
+    technique: objective-driven-exercise-design
+    target_models: [ChatGPT, Claude, Gemini, local-LLM]
+    version: "1.0.0"
+    parameters: [exercise_objectives, organization_profile, scenario_constraints, participants_roles, available_playbooks, duration]
+  - id: CSIRT-010
+    title: "Post-Incident Review & Improvement Backlog"
+    path: prompts/csirt/improvement/csirt-010-post-incident-review-backlog.md
+    category: csirt/improvement
+    modality: text_analysis
+    technique: blameless-evidence-led-retrospective
+    target_models: [ChatGPT, Claude, Gemini, local-LLM]
+    version: "1.0.0"
+    parameters: [incident_timeline, action_register, service_impact, control_outcomes, team_feedback, improvement_constraints]
+  - id: CTI-001
+    title: "Priority Intelligence Requirements Planner"
+    path: prompts/cti/requirements/cti-001-priority-intelligence-requirements.md
+    category: cti/requirements
+    modality: text_analysis
+    technique: decision-driven-collection-planning
+    target_models: [ChatGPT, Claude, Gemini, local-LLM]
+    version: "1.0.0"
+    parameters: [business_decisions, crown_jewels, threat_landscape, existing_visibility, stakeholders, collection_limits]
+  - id: CTI-002
+    title: "Source Reliability & Analytic Confidence"
+    path: prompts/cti/assessment/cti-002-source-reliability-confidence.md
+    category: cti/assessment
+    modality: text_analysis
+    technique: provenance-and-corroboration-analysis
+    target_models: [ChatGPT, Claude, Gemini, local-LLM]
+    version: "1.0.0"
+    parameters: [intelligence_reports, source_metadata, publication_dates, corroborating_evidence, collection_context, tlp_markings]
+  - id: CTI-003
+    title: "Indicator Qualification & Enrichment"
+    path: prompts/cti/indicators/cti-003-indicator-qualification-enrichment.md
+    category: cti/indicators
+    modality: text_analysis
+    technique: contextual-ioc-disposition
+    target_models: [ChatGPT, Claude, Gemini, local-LLM]
+    version: "1.0.0"
+    parameters: [candidate_indicators, observations, enrichment_results, asset_context, observation_window, sharing_policy]
+  - id: CTI-004
+    title: "ATT&CK TTP Intelligence Mapper"
+    path: prompts/cti/tradecraft/cti-004-ttp-intelligence-mapping.md
+    category: cti/tradecraft
+    modality: text_analysis
+    technique: behavior-grounded-attck-analysis
+    target_models: [ChatGPT, Claude, Gemini, local-LLM]
+    version: "1.0.0"
+    parameters: [report_excerpts, observed_behaviors, attack_version, platforms, environment_visibility, detection_inventory]
+  - id: CTI-005
+    title: "Attribution Skeptic & Competing Hypotheses"
+    path: prompts/cti/assessment/cti-005-attribution-competing-hypotheses.md
+    category: cti/assessment
+    modality: text_analysis
+    technique: hypothesis-competition-bias-control
+    target_models: [ChatGPT, Claude, Gemini, local-LLM]
+    version: "1.0.0"
+    parameters: [campaign_reports, behavioral_overlap, infrastructure_overlap, temporal_evidence, alternative_actors, confidence_policy]
+  - id: CTI-006
+    title: "Campaign Clustering & Activity Correlation"
+    path: prompts/cti/campaigns/cti-006-campaign-clustering.md
+    category: cti/campaigns
+    modality: text_analysis
+    technique: time-bounded-evidence-graph
+    target_models: [ChatGPT, Claude, Gemini, local-LLM]
+    version: "1.0.0"
+    parameters: [report_collection, normalized_indicators, ttp_evidence, time_windows, entity_identifiers, analyst_constraints]
+  - id: CTI-007
+    title: "Exploitation Risk Prioritizer (KEV/EPSS/Exposure)"
+    path: prompts/cti/vulnerabilities/cti-007-exploitation-risk-prioritizer.md
+    category: cti/vulnerabilities
+    modality: text_analysis
+    technique: exposure-centric-vulnerability-triage
+    target_models: [ChatGPT, Claude, Gemini, local-LLM]
+    version: "1.0.0"
+    parameters: [asset_vulnerabilities, asset_criticality, internet_exposure, kev_snapshot, epss_snapshot, cvss_data, mitigation_options]
+  - id: CTI-008
+    title: "Intelligence-to-Detection Requirements"
+    path: prompts/cti/detection/cti-008-intelligence-to-detection-requirements.md
+    category: cti/detection
+    modality: text_analysis
+    technique: testable-defensive-detection-translation
+    target_models: [ChatGPT, Claude, Gemini, local-LLM]
+    version: "1.0.0"
+    parameters: [intelligence_claims, environment, telemetry_schema, detection_stack, existing_rules, false_positive_constraints]
+  - id: CTI-009
+    title: "Audience-Specific Threat Brief & Dissemination"
+    path: prompts/cti/dissemination/cti-009-audience-threat-briefing.md
+    category: cti/dissemination
+    modality: text_analysis
+    technique: tlp-gated-multi-audience-synthesis
+    target_models: [ChatGPT, Claude, Gemini, local-LLM]
+    version: "1.0.0"
+    parameters: [validated_intelligence, intended_audience, required_decisions, tlp_marking, approved_distribution, reporting_window]
+  - id: CTI-010
+    title: "STIX 2.1 Package Quality Gate"
+    path: prompts/cti/exchange/cti-010-stix-21-quality-gate.md
+    category: cti/exchange
+    modality: text_analysis
+    technique: schema-aware-threat-intel-validation
+    target_models: [ChatGPT, Claude, Gemini, local-LLM]
+    version: "1.0.0"
+    parameters: [candidate_stix_bundle, stix_version, identity_and_markings, object_provenance, sharing_scope, validation_tool_results]

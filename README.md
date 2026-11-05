@@ -10,7 +10,9 @@ Catálogo global de prompts organizado por finalidade. Cada caso de uso é um ar
 | [02 — Workflows profissionais](docs/collection-02-workflows.md) | Documentos, reuniões, dados, decisões, planejamento, aprendizagem, carreira, vendas e governança de IA | 16 |
 | [03 — Incident Response](prompts/incident-response/README.md) | Detecção, contenção e erradicação de incidentes | 12 |
 | [04 — Edição fotográfica e tendências](docs/collection-04-photo-trends.md) | 25 estilos e workflows de edição visual | 25 |
-| **Total** | | **63** |
+| [05 — CSIRT](prompts/csirt/README.md) | Gestão, coordenação e governança de incidentes | 10 |
+| [06 — CTI](prompts/cti/README.md) | Inteligência de ameaças para decisões defensivas | 10 |
+| **Total** | | **83** |
 
 ## Exemplos práticos
 
@@ -42,6 +44,14 @@ Catálogo global de prompts organizado por finalidade. Cada caso de uso é um ar
 
 Os prompts exigem evidências rastreáveis, incerteza explícita e aprovação humana para mudanças operacionais.
 
+## Coleções 05 e 06 — CSIRT & CTI
+
+- [CSIRT: 10 prompts para coordenação e governança de incidentes](prompts/csirt/README.md).
+- [CTI: 10 prompts para inteligência de ameaças acionável](prompts/cti/README.md).
+- Ambas incluem exemplos sintéticos, catálogo por coleção e rubrica de avaliação.
+
+As respostas da IA exigem revisão humana. Nenhum prompt pressupõe aprovação para mudanças, divulgação, atribuição ou conclusão jurídica.
+
 ## Como usar
 
 1. Selecione o caso pela finalidade, não pelo nome de uma ferramenta.
@@ -57,7 +67,9 @@ Os nomes de modelos são sugestões de uso; não constituem declaração de test
 - `prompts/work/`, `prompts/data-analysis/`, `prompts/decision-making/`: trabalho, análise e decisão.
 - `prompts/productivity/`, `prompts/learning/`, `prompts/career/`: execução e desenvolvimento.
 - `prompts/sales/` e `prompts/ai-governance/`: operações comerciais e governança.
-- `prompts/incident-response/`: resposta a incidentes, exemplos e rubrica.
+- `prompts/incident-response/`: resposta técnica a incidentes, exemplos e rubrica.
+- `prompts/csirt/`: gestão e coordenação de incidentes.
+- `prompts/cti/`: inteligência de ameaças, priorização e disseminação.
 - `docs/`: índices e guias de coleções.
 - `templates/`: estrutura reutilizável de novos prompts.
 
