@@ -14,6 +14,29 @@ Catálogo global de prompts organizado por finalidade. Cada caso de uso é um ar
 | [06 — CTI](prompts/cti/README.md) | Inteligência de ameaças para decisões defensivas | 10 |
 | **Total** | | **83** |
 
+## Galeria visual
+
+> Os cartões abaixo são **ilustrações conceituais para navegação**. Não representam resultados de execução dos prompts nem comparações reais de antes/depois. Os exemplos vinculados descrevem entradas e saídas esperadas.
+
+[![Explorar galeria de edição fotográfica](assets/gallery/gallery-overview.svg)](docs/collection-04-photo-trends.md)
+
+| Retrato analógico 35 mm | Neon e chuva cinematográfica |
+| --- | --- |
+| [![IMG-011 — Retrato analógico](assets/gallery/img-011-analog-35mm.svg)](prompts/image-editing/analog/img-011-35mm-film.md) | [![IMG-017 — Neon e chuva](assets/gallery/img-017-neon-rain.svg)](prompts/image-editing/cinematic/img-017-neon-rain.md) |
+| [Abrir prompt](prompts/image-editing/analog/img-011-35mm-film.md) · [Exemplo](examples/img-011-example.md) | [Abrir prompt](prompts/image-editing/cinematic/img-017-neon-rain.md) · [Exemplo](examples/img-017-example.md) |
+
+| Photobooth de quatro quadros | Provador virtual |
+| --- | --- |
+| [![IMG-024 — Photobooth](assets/gallery/img-024-photobooth.svg)](prompts/image-editing/compositing/img-024-photobooth-four.md) | [![IMG-034 — Provador virtual](assets/gallery/img-034-virtual-try-on.svg)](prompts/image-editing/practical/img-034-virtual-try-on.md) |
+| [Abrir prompt](prompts/image-editing/compositing/img-024-photobooth-four.md) · [Exemplo](examples/img-024-example.md) | [Abrir prompt](prompts/image-editing/practical/img-034-virtual-try-on.md) · [Exemplo](examples/img-034-example.md) |
+
+| Fotografia de produto para e-commerce |
+| --- |
+| [![IMG-035 — Produto para e-commerce](assets/gallery/img-035-ecommerce.svg)](prompts/image-editing/practical/img-035-ecommerce-retouch.md) |
+| [Abrir prompt](prompts/image-editing/practical/img-035-ecommerce-retouch.md) · [Exemplo](examples/img-035-example.md) |
+
+[Ver os 25 prompts fotográficos](docs/collection-04-photo-trends.md) · [Ver todos os exemplos](examples/README.md)
+
 ## Exemplos práticos
 
 [Entradas e saídas esperadas, com critérios de revisão](examples/README.md) — exemplos ilustrativos, não evidências de testes executados.
@@ -71,6 +94,7 @@ Os nomes de modelos são sugestões de uso; não constituem declaração de test
 - `prompts/csirt/`: gestão e coordenação de incidentes.
 - `prompts/cti/`: inteligência de ameaças, priorização e disseminação.
 - `docs/`: índices e guias de coleções.
+- `assets/gallery/`: cartões visuais de navegação do README.
 - `templates/`: estrutura reutilizável de novos prompts.
 
 ## Segurança e uso responsável
