@@ -27,31 +27,26 @@ Catálogo global de prompts organizado por finalidade. Cada caso de uso é um ar
 
 ## Galeria visual
 
-### Como interpretar a galeria
+As imagens abaixo são **demonstrações sintéticas e ilustrativas dos efeitos visuais**. Não foram obtidas executando os prompts do catálogo e não constituem evidência de desempenho. Elas servem para explorar os casos de uso e suas entradas parametrizadas.
 
-Cada cartão abre o prompt completo em Markdown; o link **Exemplo** apresenta parâmetros preenchidos e critérios para avaliar a saída esperada. As imagens SVG são apenas representações visuais dos casos de uso, **não resultados gerados pelo modelo**. Para demonstrar resultados reais, será necessário produzir imagens de entrada e saída com direitos de uso e registrar a ferramenta e as condições de execução.
+[![Seleção visual de cinco técnicas fotográficas: filme analógico, neon com chuva, tira de cabine, provador virtual e produto para e-commerce](assets/gallery/photographic-strip.jpg)](docs/collection-04-photo-trends.md)
 
-
-> Os cartões abaixo são **ilustrações conceituais para navegação**. Não representam resultados de execução dos prompts nem comparações reais de antes/depois. Os exemplos vinculados descrevem entradas e saídas esperadas.
-
-[![Explorar galeria de edição fotográfica](assets/gallery/gallery-overview.svg)](docs/collection-04-photo-trends.md)
-
-| Retrato analógico 35 mm | Neon e chuva cinematográfica |
+| Analógico 35 mm · IMG-011 | Neon e chuva · IMG-017 |
 | --- | --- |
-| [![IMG-011 — Retrato analógico](assets/gallery/img-011-analog-35mm.svg)](prompts/image-editing/analog/img-011-35mm-film.md) | [![IMG-017 — Neon e chuva](assets/gallery/img-017-neon-rain.svg)](prompts/image-editing/cinematic/img-017-neon-rain.md) |
-| [Abrir prompt](prompts/image-editing/analog/img-011-35mm-film.md) · [Exemplo](examples/img-011-example.md) | [Abrir prompt](prompts/image-editing/cinematic/img-017-neon-rain.md) · [Exemplo](examples/img-017-example.md) |
+| [![Comparação sintética do estilo filme 35 mm](assets/gallery/img-011-photographic.jpg)](prompts/image-editing/analog/img-011-35mm-film.md) | [![Comparação sintética de retrato noturno com neon e chuva](assets/gallery/img-017-photographic.jpg)](prompts/image-editing/cinematic/img-017-neon-rain.md) |
+| [Abrir prompt](prompts/image-editing/analog/img-011-35mm-film.md) · [Entrada de exemplo](examples/img-011-example.md) | [Abrir prompt](prompts/image-editing/cinematic/img-017-neon-rain.md) · [Entrada de exemplo](examples/img-017-example.md) |
 
-| Photobooth de quatro quadros | Provador virtual |
+| Photobooth · IMG-024 | Provador virtual · IMG-034 |
 | --- | --- |
-| [![IMG-024 — Photobooth](assets/gallery/img-024-photobooth.svg)](prompts/image-editing/compositing/img-024-photobooth-four.md) | [![IMG-034 — Provador virtual](assets/gallery/img-034-virtual-try-on.svg)](prompts/image-editing/practical/img-034-virtual-try-on.md) |
-| [Abrir prompt](prompts/image-editing/compositing/img-024-photobooth-four.md) · [Exemplo](examples/img-024-example.md) | [Abrir prompt](prompts/image-editing/practical/img-034-virtual-try-on.md) · [Exemplo](examples/img-034-example.md) |
+| [![Montagem sintética de tira fotográfica de quatro quadros](assets/gallery/img-024-photographic.jpg)](prompts/image-editing/compositing/img-024-photobooth-four.md) | [![Comparação sintética de edição de vestuário](assets/gallery/img-034-photographic.jpg)](prompts/image-editing/practical/img-034-virtual-try-on.md) |
+| [Abrir prompt](prompts/image-editing/compositing/img-024-photobooth-four.md) · [Entrada de exemplo](examples/img-024-example.md) | [Abrir prompt](prompts/image-editing/practical/img-034-virtual-try-on.md) · [Entrada de exemplo](examples/img-034-example.md) |
 
-| Fotografia de produto para e-commerce |
+| Produto para e-commerce · IMG-035 |
 | --- |
-| [![IMG-035 — Produto para e-commerce](assets/gallery/img-035-ecommerce.svg)](prompts/image-editing/practical/img-035-ecommerce-retouch.md) |
-| [Abrir prompt](prompts/image-editing/practical/img-035-ecommerce-retouch.md) · [Exemplo](examples/img-035-example.md) |
+| [![Comparação sintética de apresentação de produto antes e depois de iluminação de estúdio](assets/gallery/img-035-photographic.jpg)](prompts/image-editing/practical/img-035-ecommerce-retouch.md) |
+| [Abrir prompt](prompts/image-editing/practical/img-035-ecommerce-retouch.md) · [Entrada de exemplo](examples/img-035-example.md) |
 
-[Ver os 25 prompts fotográficos](docs/collection-04-photo-trends.md) · [Ver todos os exemplos](examples/README.md)
+[Ver a coleção fotográfica completa](docs/collection-04-photo-trends.md) · [Ver exemplos textuais](examples/README.md)
 
 ## Exemplos práticos
 
@@ -114,6 +109,9 @@ Os nomes de modelos são sugestões de uso; não constituem declaração de test
 - `templates/`: estrutura reutilizável de novos prompts.
 
 ## Segurança e uso responsável
+
+Este repositório publica exclusivamente exemplos genéricos e sintéticos, sem referências a organizações ou ambientes corporativos identificáveis. Consulte a [política de publicação e confidencialidade](docs/publication-policy.md) antes de qualquer contribuição.
+
 
 Não envie dados sigilosos a sistemas não autorizados. Os arquivos podem ser adaptados para diferentes modelos e situações, mas devem ser revisados antes de decisões importantes.
 
