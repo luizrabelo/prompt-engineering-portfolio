@@ -2,6 +2,17 @@
 
 Catálogo global de prompts organizado por finalidade. Cada caso de uso é um arquivo Markdown parametrizado, com modalidade, técnica e modelos-alvo registrados no [`catalog.yaml`](catalog.yaml).
 
+## Navegação rápida
+
+| Quero... | Acessar |
+| --- | --- |
+| Encontrar um prompt pela categoria ou modelo | [Catálogo YAML](catalog.yaml) |
+| Explorar estilos e edição de fotos | [Galeria visual](#galeria-visual) · [Coleção fotográfica](docs/collection-04-photo-trends.md) |
+| Ver como preencher variáveis e interpretar saídas | [Exemplos práticos](examples/README.md) |
+| Trabalhar com documentos, decisões e produtividade | [Workflows profissionais](docs/collection-02-workflows.md) |
+| Investigar e coordenar incidentes | [Incident Response](prompts/incident-response/README.md) · [CSIRT](prompts/csirt/README.md) |
+| Investigar tendências e ameaças | [CTI](prompts/cti/README.md) |
+
 ## Coleções
 
 | Coleção | Escopo | Prompts |
@@ -15,6 +26,11 @@ Catálogo global de prompts organizado por finalidade. Cada caso de uso é um ar
 | **Total** | | **83** |
 
 ## Galeria visual
+
+### Como interpretar a galeria
+
+Cada cartão abre o prompt completo em Markdown; o link **Exemplo** apresenta parâmetros preenchidos e critérios para avaliar a saída esperada. As imagens SVG são apenas representações visuais dos casos de uso, **não resultados gerados pelo modelo**. Para demonstrar resultados reais, será necessário produzir imagens de entrada e saída com direitos de uso e registrar a ferramenta e as condições de execução.
+
 
 > Os cartões abaixo são **ilustrações conceituais para navegação**. Não representam resultados de execução dos prompts nem comparações reais de antes/depois. Os exemplos vinculados descrevem entradas e saídas esperadas.
 
