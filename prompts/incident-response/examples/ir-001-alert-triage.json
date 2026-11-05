@@ -1,0 +1,33 @@
+{
+  "scenario": "Synthetic suspicious PowerShell alert",
+  "synthetic": true,
+  "alert": {
+    "id": "ALERT-EXAMPLE-001",
+    "source": "SyntheticEDR",
+    "asset": "WS-DEMO-017",
+    "utc_time": "2026-11-02T14:03:24Z",
+    "rule": "Suspicious script interpreter",
+    "events": [
+      {
+        "id": "EVT-101",
+        "process": "powershell.exe",
+        "parent": "winword.exe",
+        "command_line": "powershell.exe -NoProfile -EncodedCommand <REDACTED_SYNTHETIC>",
+        "utc_time": "2026-11-02T14:03:22Z"
+      },
+      {
+        "id": "EVT-102",
+        "process": "powershell.exe",
+        "network_destination": "198.51.100.42",
+        "utc_time": "2026-11-02T14:03:24Z"
+      }
+    ]
+  },
+  "environment": "Windows workstation fleet",
+  "asset_criticality": "medium",
+  "telemetry_sources": [
+    "synthetic-edr-process",
+    "synthetic-edr-network"
+  ],
+  "constraints": "No direct changes; investigate with read-only queries"
+}

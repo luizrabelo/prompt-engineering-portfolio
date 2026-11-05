@@ -1,0 +1,139 @@
+schema_version: '1.0'
+collection: incident-response
+description: Model-agnostic, evidence-led prompts for detection, containment, and eradication.
+language: en
+model_compatibility: [ChatGPT, Claude, Gemini, local-LLM]
+categories: [detection, containment, eradication]
+prompts:
+  - id: IR-001
+    title: "Alert Triage Analyst"
+    category: detection
+    path: detection/ir-001-alert-triage-analyst.md
+    technique: evidence-grounded-triage
+    model: model-agnostic
+    tags: [siem, edr, triage, severity]
+    parameters: [alert, environment, asset_criticality, telemetry_sources, constraints]
+    evaluation:
+      - "No inferred compromise presented as an observed fact."
+      - "Every important finding traceable to supplied evidence IDs."
+  - id: IR-002
+    title: "Attack Timeline Reconstruction"
+    category: detection
+    path: detection/ir-002-attack-timeline.md
+    technique: temporal-correlation
+    model: model-agnostic
+    tags: [timeline, correlation, forensics]
+    parameters: [events, timezones, known_entities, incident_window, clock_skew]
+    evaluation:
+      - "Raw timestamps retained for auditability."
+      - "Correlation and causation distinguished explicitly."
+  - id: IR-003
+    title: "MITRE ATT&CK Investigator"
+    category: detection
+    path: detection/ir-003-attack-investigator.md
+    technique: behavioral-mapping
+    model: model-agnostic
+    tags: [mitre-attack, ttp, behavior]
+    parameters: [behaviors, platform, telemetry, attck_version_optional, existing_detections]
+    evaluation:
+      - "Every technique mapping is grounded in observable behavior."
+      - "Uncertain or version-dependent identifiers are labeled unverified."
+  - id: IR-004
+    title: "Compromise Scope Analyzer"
+    category: detection
+    path: detection/ir-004-compromise-scope.md
+    technique: entity-graph-expansion
+    model: model-agnostic
+    tags: [scope, asset, identity, cloud]
+    parameters: [seed_indicators, telemetry, asset_inventory, identity_inventory, time_window, constraints]
+    evaluation:
+      - "IP-only joins are marked weak when ambiguous."
+      - "No asset declared clean only because no alert exists."
+  - id: IR-005
+    title: "Threat Hunting Query Builder"
+    category: detection
+    path: detection/ir-005-threat-hunting.md
+    technique: schema-constrained-query-generation
+    model: model-agnostic
+    tags: [kql, spl, sigma, hunting]
+    parameters: [hunting_hypothesis, query_language, schema, time_window, environment_constraints]
+    evaluation:
+      - "No invented field or table references."
+      - "Queries must have no mutation or external side effects."
+  - id: IR-006
+    title: "Containment Strategy Advisor"
+    category: containment
+    path: containment/ir-006-containment-strategy.md
+    technique: risk-aware-options-analysis
+    model: model-agnostic
+    tags: [containment, decision, rollback]
+    parameters: [confirmed_findings, affected_services, business_constraints, controls_available, evidence_preservation, decision_authority]
+    evaluation:
+      - "No disruptive change presented as pre-authorized."
+      - "Business continuity and evidence preservation considered."
+  - id: IR-007
+    title: "Identity Compromise Responder"
+    category: containment
+    path: containment/ir-007-identity-compromise.md
+    technique: identity-session-analysis
+    model: model-agnostic
+    tags: [iam, sessions, tokens, phishing]
+    parameters: [identity_events, provider, account_privileges, session_inventory, available_controls, business_constraints]
+    evaluation:
+      - "Token revocation is not assumed instantaneous or global."
+      - "No secret or raw credential values requested or echoed."
+  - id: IR-008
+    title: "Ransomware Response Planner"
+    category: containment
+    path: containment/ir-008-ransomware-response.md
+    technique: crisis-sequencing
+    model: model-agnostic
+    tags: [ransomware, backup, lateral-movement]
+    parameters: [ransomware_indicators, impacted_assets, segmentation, backup_status, critical_services, authority]
+    evaluation:
+      - "Encryption is not treated as evidence of exfiltration."
+      - "Backup status is not treated as proof of recoverability."
+  - id: IR-009
+    title: "Blast Radius & Business Impact"
+    category: containment
+    path: containment/ir-009-blast-radius.md
+    technique: dependency-impact-analysis
+    model: model-agnostic
+    tags: [business-impact, dependencies, criticality]
+    parameters: [confirmed_and_suspected_assets, service_dependencies, business_criticality, available_controls, operational_windows]
+    evaluation:
+      - "Potential impact is separated from confirmed impact."
+      - "No invented financial losses, durations or customer figures."
+  - id: IR-010
+    title: "Root Cause & Persistence Analyzer"
+    category: eradication
+    path: eradication/ir-010-root-cause-persistence.md
+    technique: causal-hypothesis-testing
+    model: model-agnostic
+    tags: [root-cause, persistence, initial-access]
+    parameters: [timeline, artifacts, config_changes, identity_changes, coverage, prior_actions]
+    evaluation:
+      - "Unproven causal links are not described as confirmed."
+      - "Root-cause uncertainty remains visible in closure criteria."
+  - id: IR-011
+    title: "Eradication Plan Builder"
+    category: eradication
+    path: eradication/ir-011-eradication-plan.md
+    technique: dependency-aware-remediation
+    model: model-agnostic
+    tags: [eradication, remediation, change-control]
+    parameters: [confirmed_findings, affected_assets, available_controls, preservation_requirements, maintenance_windows, approval_authority]
+    evaluation:
+      - "No destructive action without explicit approval and evidence hold."
+      - "Every action tied to a confirmed or explicitly suspected finding."
+  - id: IR-012
+    title: "Post-Eradication Verification"
+    category: eradication
+    path: eradication/ir-012-eradication-verification.md
+    technique: evidence-based-assurance
+    model: model-agnostic
+    tags: [verification, assurance, monitoring]
+    parameters: [eradication_actions, original_findings, available_telemetry, verification_window, control_expected_state, owners]
+    evaluation:
+      - "No absence-of-alerts fallacy."
+      - "Success requires testable positive evidence and adequate coverage."

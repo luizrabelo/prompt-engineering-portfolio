@@ -1,0 +1,27 @@
+{
+  "scenario": "Synthetic post-containment remediation",
+  "synthetic": true,
+  "confirmed_findings": [
+    {
+      "evidence_id": "FIND-001",
+      "type": "unauthorized scheduled task",
+      "asset": "VM-DEMO-09"
+    },
+    {
+      "evidence_id": "FIND-002",
+      "type": "credential exposure",
+      "identity": "service-demo"
+    }
+  ],
+  "affected_assets": [
+    "VM-DEMO-09"
+  ],
+  "available_controls": [
+    "task review",
+    "credential rotation",
+    "trusted image rebuild"
+  ],
+  "preservation_requirements": "Preserve images and access logs before changes",
+  "maintenance_windows": "Non-production lab only",
+  "approval_authority": "Synthetic incident commander"
+}

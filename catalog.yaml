@@ -236,3 +236,113 @@ entries:
     target_models: [ChatGPT, Claude, Gemini, Grok]
     version: "1.0.0"
     parameters: [proposta_fornecedor, requisitos_negocio, requisitos_segurança, restricoes_regulatorias, dados_processados, sla_esperado]
+
+# Incident response collection (IR-001 to IR-012)
+  - id: IR-001
+    title: "Alert Triage Analyst"
+    path: prompts/incident-response/detection/ir-001-alert-triage-analyst.md
+    category: incident-response/detection
+    modality: text_analysis
+    technique: evidence-grounded-triage
+    target_models: [ChatGPT, Claude, Gemini, local-LLM]
+    version: "1.0.0"
+    parameters: [alert, environment, asset_criticality, telemetry_sources, constraints]
+  - id: IR-002
+    title: "Attack Timeline Reconstruction"
+    path: prompts/incident-response/detection/ir-002-attack-timeline.md
+    category: incident-response/detection
+    modality: text_analysis
+    technique: temporal-correlation
+    target_models: [ChatGPT, Claude, Gemini, local-LLM]
+    version: "1.0.0"
+    parameters: [events, timezones, known_entities, incident_window, clock_skew]
+  - id: IR-003
+    title: "MITRE ATT&CK Investigator"
+    path: prompts/incident-response/detection/ir-003-attack-investigator.md
+    category: incident-response/detection
+    modality: text_analysis
+    technique: behavioral-mapping
+    target_models: [ChatGPT, Claude, Gemini, local-LLM]
+    version: "1.0.0"
+    parameters: [behaviors, platform, telemetry, attck_version_optional, existing_detections]
+  - id: IR-004
+    title: "Compromise Scope Analyzer"
+    path: prompts/incident-response/detection/ir-004-compromise-scope.md
+    category: incident-response/detection
+    modality: text_analysis
+    technique: entity-graph-expansion
+    target_models: [ChatGPT, Claude, Gemini, local-LLM]
+    version: "1.0.0"
+    parameters: [seed_indicators, telemetry, asset_inventory, identity_inventory, time_window, constraints]
+  - id: IR-005
+    title: "Threat Hunting Query Builder"
+    path: prompts/incident-response/detection/ir-005-threat-hunting.md
+    category: incident-response/detection
+    modality: text_analysis
+    technique: schema-constrained-query-generation
+    target_models: [ChatGPT, Claude, Gemini, local-LLM]
+    version: "1.0.0"
+    parameters: [hunting_hypothesis, query_language, schema, time_window, environment_constraints]
+  - id: IR-006
+    title: "Containment Strategy Advisor"
+    path: prompts/incident-response/containment/ir-006-containment-strategy.md
+    category: incident-response/containment
+    modality: text_analysis
+    technique: risk-aware-options-analysis
+    target_models: [ChatGPT, Claude, Gemini, local-LLM]
+    version: "1.0.0"
+    parameters: [confirmed_findings, affected_services, business_constraints, controls_available, evidence_preservation, decision_authority]
+  - id: IR-007
+    title: "Identity Compromise Responder"
+    path: prompts/incident-response/containment/ir-007-identity-compromise.md
+    category: incident-response/containment
+    modality: text_analysis
+    technique: identity-session-analysis
+    target_models: [ChatGPT, Claude, Gemini, local-LLM]
+    version: "1.0.0"
+    parameters: [identity_events, provider, account_privileges, session_inventory, available_controls, business_constraints]
+  - id: IR-008
+    title: "Ransomware Response Planner"
+    path: prompts/incident-response/containment/ir-008-ransomware-response.md
+    category: incident-response/containment
+    modality: text_analysis
+    technique: crisis-sequencing
+    target_models: [ChatGPT, Claude, Gemini, local-LLM]
+    version: "1.0.0"
+    parameters: [ransomware_indicators, impacted_assets, segmentation, backup_status, critical_services, authority]
+  - id: IR-009
+    title: "Blast Radius & Business Impact"
+    path: prompts/incident-response/containment/ir-009-blast-radius.md
+    category: incident-response/containment
+    modality: text_analysis
+    technique: dependency-impact-analysis
+    target_models: [ChatGPT, Claude, Gemini, local-LLM]
+    version: "1.0.0"
+    parameters: [confirmed_and_suspected_assets, service_dependencies, business_criticality, available_controls, operational_windows]
+  - id: IR-010
+    title: "Root Cause & Persistence Analyzer"
+    path: prompts/incident-response/eradication/ir-010-root-cause-persistence.md
+    category: incident-response/eradication
+    modality: text_analysis
+    technique: causal-hypothesis-testing
+    target_models: [ChatGPT, Claude, Gemini, local-LLM]
+    version: "1.0.0"
+    parameters: [timeline, artifacts, config_changes, identity_changes, coverage, prior_actions]
+  - id: IR-011
+    title: "Eradication Plan Builder"
+    path: prompts/incident-response/eradication/ir-011-eradication-plan.md
+    category: incident-response/eradication
+    modality: text_analysis
+    technique: dependency-aware-remediation
+    target_models: [ChatGPT, Claude, Gemini, local-LLM]
+    version: "1.0.0"
+    parameters: [confirmed_findings, affected_assets, available_controls, preservation_requirements, maintenance_windows, approval_authority]
+  - id: IR-012
+    title: "Post-Eradication Verification"
+    path: prompts/incident-response/eradication/ir-012-eradication-verification.md
+    category: incident-response/eradication
+    modality: text_analysis
+    technique: evidence-based-assurance
+    target_models: [ChatGPT, Claude, Gemini, local-LLM]
+    version: "1.0.0"
+    parameters: [eradication_actions, original_findings, available_telemetry, verification_window, control_expected_state, owners]

@@ -51,6 +51,13 @@ Os nomes de modelos são sugestões de uso; não constituem declaração de test
 
 Não envie dados sigilosos a sistemas não autorizados. Os arquivos podem ser adaptados para diferentes modelos e situações, mas devem ser revisados antes de decisões importantes.
 
+
+## Coleção 02 — Incident Response
+
+Novos **12 prompts operacionais de resposta a incidentes**, organizados por detecção, contenção e erradicação. Consulte [`prompts/incident-response/README.md`](prompts/incident-response/README.md), [`prompts/incident-response/catalog.yaml`](prompts/incident-response/catalog.yaml) e a [rubrica de avaliação](prompts/incident-response/evaluation/rubric.md).
+
+O repositório contém exemplos sintéticos. As recomendações de IA requerem validação humana antes de qualquer alteração operacional.
+
 ## Licença
 
 Licença ainda não definida. Nenhuma autorização de redistribuição é presumida.

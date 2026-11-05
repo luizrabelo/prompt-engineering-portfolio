@@ -1,0 +1,28 @@
+{
+  "scenario": "Synthetic identity session anomaly",
+  "synthetic": true,
+  "provider": "fictional-idp",
+  "account_privileges": "non-admin user",
+  "identity_events": [
+    {
+      "id": "AUTH-101",
+      "utc_time": "2026-11-02T10:00:00Z",
+      "event": "Successful sign-in",
+      "session_id": "SESSION-DEMO-1",
+      "ip": "203.0.113.10"
+    },
+    {
+      "id": "AUTH-102",
+      "utc_time": "2026-11-02T10:02:00Z",
+      "event": "New OAuth grant",
+      "session_id": "SESSION-DEMO-1",
+      "app_id": "APP-DEMO"
+    }
+  ],
+  "session_inventory": "Only one session visible",
+  "available_controls": [
+    "review grants",
+    "revoke user sessions after approval"
+  ],
+  "business_constraints": "Do not revoke critical service principals"
+}
