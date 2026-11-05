@@ -92,3 +92,147 @@ entries:
     target_models: [Gemini]
     version: "1.0.0"
     parameters: [digitalizacao_original, defeitos_visiveis, nivel_intervencao, tratamento_cor, preservacao_historica]
+  - id: WORK-001
+    title: "Resumo executivo com rastreabilidade"
+    path: prompts/work/document-analysis/work-001-evidence-indexed-synthesis.md
+    category: work/document-analysis
+    modality: text
+    technique: evidence-indexed-synthesis
+    target_models: [ChatGPT, Claude, Gemini, Grok]
+    version: "1.0.0"
+    parameters: [documentos, publico, decisao_esperada, limite_palavras, idioma]
+  - id: WORK-002
+    title: "Ata acionável e registro de decisões"
+    path: prompts/work/meetings/work-002-decision-action-extraction.md
+    category: work/meetings
+    modality: text
+    technique: decision-action-extraction
+    target_models: [ChatGPT, Claude, Gemini, Grok]
+    version: "1.0.0"
+    parameters: [transcricao, participantes, objetivo_reuniao, data_reuniao, politica_prazos]
+  - id: WORK-003
+    title: "Revisão de texto com mapa de alterações"
+    path: prompts/work/communication/work-003-constrained-rewrite-diff.md
+    category: work/communication
+    modality: text
+    technique: constrained-rewrite-diff
+    target_models: [ChatGPT, Claude, Gemini, Grok]
+    version: "1.0.0"
+    parameters: [texto_original, publico, objetivo, tom, limite_extensao, termos_preservados]
+  - id: WORK-004
+    title: "Revisão crítica de apresentação executiva"
+    path: prompts/work/executive-communication/work-004-adversarial-board-review.md
+    category: work/executive-communication
+    modality: text
+    technique: adversarial-board-review
+    target_models: [ChatGPT, Claude, Gemini, Grok]
+    version: "1.0.0"
+    parameters: [slides, decisao_solicitada, perfil_audiencia, metricas_obrigatorias, restricao_tempo]
+  - id: DATA-001
+    title: "Análise de variações e anomalias"
+    path: prompts/data-analysis/diagnostics/data-001-fact-hypothesis-separation.md
+    category: data-analysis/diagnostics
+    modality: text
+    technique: fact-hypothesis-separation
+    target_models: [ChatGPT, Claude, Gemini, Grok]
+    version: "1.0.0"
+    parameters: [tabela, colunas, periodos, metrica_principal, regras_negocio, limite_alertas]
+  - id: DEC-001
+    title: "Pré-mortem de decisão estratégica"
+    path: prompts/decision-making/risk/dec-001-premortem-assumption-testing.md
+    category: decision-making/risk
+    modality: text
+    technique: premortem-assumption-testing
+    target_models: [ChatGPT, Claude, Gemini, Grok]
+    version: "1.0.0"
+    parameters: [decisao, objetivo, horizonte, premissas, restricoes, tolerancia_risco]
+  - id: DEC-002
+    title: "Comparação multicritério com sensibilidade"
+    path: prompts/decision-making/alternatives/dec-002-weighted-decision-sensitivity.md
+    category: decision-making/alternatives
+    modality: text
+    technique: weighted-decision-sensitivity
+    target_models: [ChatGPT, Claude, Gemini, Grok]
+    version: "1.0.0"
+    parameters: [alternativas, criterios, pesos, evidencias, restricoes_eliminatorias, contexto]
+  - id: DEC-003
+    title: "Planejamento por cenários e sinais"
+    path: prompts/decision-making/scenarios/dec-003-scenario-trigger-mapping.md
+    category: decision-making/scenarios
+    modality: text
+    technique: scenario-trigger-mapping
+    target_models: [ChatGPT, Claude, Gemini, Grok]
+    version: "1.0.0"
+    parameters: [objetivo, horizonte, variaveis_criticas, dados_disponiveis, acoes_reversiveis, limites]
+  - id: PLAN-001
+    title: "Agenda semanal com capacidade real"
+    path: prompts/productivity/planning/plan-001-capacity-constrained-scheduling.md
+    category: productivity/planning
+    modality: text
+    technique: capacity-constrained-scheduling
+    target_models: [ChatGPT, Claude, Gemini, Grok]
+    version: "1.0.0"
+    parameters: [tarefas, janelas_disponiveis, compromissos_fixos, prazos, energia_por_periodo, margem_imprevistos]
+  - id: PLAN-002
+    title: "Plano de execução de 90 dias"
+    path: prompts/productivity/execution/plan-002-milestone-backplanning.md
+    category: productivity/execution
+    modality: text
+    technique: milestone-backplanning
+    target_models: [ChatGPT, Claude, Gemini, Grok]
+    version: "1.0.0"
+    parameters: [objetivo, resultado_mensuravel, recursos, restricoes, dependencias, responsaveis]
+  - id: LEARN-001
+    title: "Tutor por recuperação ativa e feedback"
+    path: prompts/learning/study/learn-001-retrieval-practice-adaptive.md
+    category: learning/study
+    modality: text
+    technique: retrieval-practice-adaptive
+    target_models: [ChatGPT, Claude, Gemini, Grok]
+    version: "1.0.0"
+    parameters: [assunto, nivel_inicial, objetivo_aprendizado, material_base, duracao_sessao, criterio_dominio]
+  - id: CAREER-001
+    title: "Análise de vaga e entrevista adaptativa"
+    path: prompts/career/interviews/career-001-competency-gap-interview-loop.md
+    category: career/interviews
+    modality: text
+    technique: competency-gap-interview-loop
+    target_models: [ChatGPT, Claude, Gemini, Grok]
+    version: "1.0.0"
+    parameters: [descricao_vaga, curriculo_sanitizado, competencias_alvo, nivel_senioridade, idioma, criterio_avaliacao]
+  - id: SALES-001
+    title: "Discovery comercial com hipóteses auditáveis"
+    path: prompts/sales/discovery/sales-001-hypothesis-driven-discovery.md
+    category: sales/discovery
+    modality: text
+    technique: hypothesis-driven-discovery
+    target_models: [ChatGPT, Claude, Gemini, Grok]
+    version: "1.0.0"
+    parameters: [empresa_prospect, informacoes_publicas, solucao, segmento, perfil_interlocutor, objetivo_reuniao]
+  - id: SALES-002
+    title: "Pós-reunião comercial e CRM consistente"
+    path: prompts/sales/crm/sales-002-structured-crm-extraction.md
+    category: sales/crm
+    modality: text
+    technique: structured-crm-extraction
+    target_models: [ChatGPT, Claude, Gemini, Grok]
+    version: "1.0.0"
+    parameters: [notas_reuniao, campos_crm, etapa_atual, regras_qualificacao, data_reuniao, proxima_acao]
+  - id: AIGOV-001
+    title: "Priorização de casos de uso de IA"
+    path: prompts/ai-governance/use-case-prioritization/aigov-001-value-risk-feasibility-gates.md
+    category: ai-governance/use-case-prioritization
+    modality: text
+    technique: value-risk-feasibility-gates
+    target_models: [ChatGPT, Claude, Gemini, Grok]
+    version: "1.0.0"
+    parameters: [casos_de_uso, objetivos_negocio, restricoes_dados, capacidade_tecnica, metrica_valor, prazo_piloto]
+  - id: AIGOV-002
+    title: "Due diligence de fornecedor de IA"
+    path: prompts/ai-governance/vendor-assessment/aigov-002-claim-evidence-control-mapping.md
+    category: ai-governance/vendor-assessment
+    modality: text
+    technique: claim-evidence-control-mapping
+    target_models: [ChatGPT, Claude, Gemini, Grok]
+    version: "1.0.0"
+    parameters: [proposta_fornecedor, requisitos_negocio, requisitos_segurança, restricoes_regulatorias, dados_processados, sla_esperado]
