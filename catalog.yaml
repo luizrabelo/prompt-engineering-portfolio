@@ -346,3 +346,228 @@ entries:
     target_models: [ChatGPT, Claude, Gemini, local-LLM]
     version: "1.0.0"
     parameters: [eradication_actions, original_findings, available_telemetry, verification_window, control_expected_state, owners]
+  - id: IMG-011
+    title: "Retrato analógico 35 mm"
+    path: prompts/image-editing/analog/img-011-35mm-film.md
+    category: image-editing/analog
+    modality: reference_edit
+    technique: 35mm-film
+    target_models: [Gemini, ChatGPT]
+    version: "1.0.0"
+    parameters: [foto, perfil_filme, granulacao, temperatura_cor, intensidade]
+  - id: IMG-012
+    title: "Digicam Y2K com flash frontal"
+    path: prompts/image-editing/analog/img-012-y2k-digicam.md
+    category: image-editing/analog
+    modality: reference_edit
+    technique: y2k-digicam
+    target_models: [Gemini, ChatGPT]
+    version: "1.0.0"
+    parameters: [foto, forca_flash, tonalidade, ruido, proporcao]
+  - id: IMG-013
+    title: "Retrato pop anos 1980"
+    path: prompts/image-editing/retro-portraits/img-013-eighties-studio.md
+    category: image-editing/retro-portraits
+    modality: reference_edit
+    technique: eighties-studio
+    target_models: [Gemini, ChatGPT]
+    version: "1.0.0"
+    parameters: [foto, paleta, figurino, cabelo, cenario, luz]
+  - id: IMG-014
+    title: "Retrato de anuário retrô"
+    path: prompts/image-editing/retro-portraits/img-014-yearbook-1990s.md
+    category: image-editing/retro-portraits
+    modality: reference_edit
+    technique: yearbook-1990s
+    target_models: [Gemini, ChatGPT]
+    version: "1.0.0"
+    parameters: [foto, fundo, roupa, expressao, enquadramento]
+  - id: IMG-015
+    title: "Fotografia instantânea retrô"
+    path: prompts/image-editing/analog/img-015-instant-print.md
+    category: image-editing/analog
+    modality: reference_edit
+    technique: instant-print
+    target_models: [Gemini, ChatGPT]
+    version: "1.0.0"
+    parameters: [foto, ambiente, temperatura_luz, margem, desgaste]
+  - id: IMG-016
+    title: "Moda urbana com flash noturno"
+    path: prompts/image-editing/cinematic/img-016-night-fashion-flash.md
+    category: image-editing/cinematic
+    modality: reference_edit
+    technique: night-fashion-flash
+    target_models: [Gemini, ChatGPT]
+    version: "1.0.0"
+    parameters: [foto, local, figurino, distancia_camera, fundo, contraste]
+  - id: IMG-017
+    title: "Cenário neon e chuva cinematográfica"
+    path: prompts/image-editing/cinematic/img-017-neon-rain.md
+    category: image-editing/cinematic
+    modality: reference_edit
+    technique: neon-rain
+    target_models: [Gemini, ChatGPT]
+    version: "1.0.0"
+    parameters: [foto, paleta_neon, intensidade_chuva, cenario, reflexos]
+  - id: IMG-018
+    title: "Golden hour com contraluz"
+    path: prompts/image-editing/cinematic/img-018-golden-hour.md
+    category: image-editing/cinematic
+    modality: reference_edit
+    technique: golden-hour
+    target_models: [Gemini, ChatGPT]
+    version: "1.0.0"
+    parameters: [foto, posicao_sol, ambiente, temperatura, flare, intensidade]
+  - id: IMG-019
+    title: "Rooftop na blue hour"
+    path: prompts/image-editing/cinematic/img-019-blue-hour.md
+    category: image-editing/cinematic
+    modality: reference_edit
+    technique: blue-hour
+    target_models: [Gemini, ChatGPT]
+    version: "1.0.0"
+    parameters: [foto, horizonte, ceu, luzes_cidade, flash, formato]
+  - id: IMG-020
+    title: "Sujeito nítido com multidão em movimento"
+    path: prompts/image-editing/cinematic/img-020-motion-freeze.md
+    category: image-editing/cinematic
+    modality: reference_edit
+    technique: motion-freeze
+    target_models: [Gemini, ChatGPT]
+    version: "1.0.0"
+    parameters: [foto, sujeito_protegido, elementos_moveis, direcao, tempo_simulado]
+  - id: IMG-021
+    title: "Retrato noir monocromático"
+    path: prompts/image-editing/cinematic/img-021-noir.md
+    category: image-editing/cinematic
+    modality: reference_edit
+    technique: noir
+    target_models: [Gemini, ChatGPT]
+    version: "1.0.0"
+    parameters: [foto, fonte_luz, contraste, textura, clima]
+  - id: IMG-022
+    title: "Color grading cinematográfico seletivo"
+    path: prompts/image-editing/color/img-022-selective-grading.md
+    category: image-editing/color
+    modality: reference_edit
+    technique: selective-grading
+    target_models: [Gemini, ChatGPT]
+    version: "1.0.0"
+    parameters: [foto, cor_sombras, cor_luzes, intensidade, cores_protegidas]
+  - id: IMG-023
+    title: "Capa editorial fictícia"
+    path: prompts/image-editing/compositing/img-023-editorial-cover.md
+    category: image-editing/compositing
+    modality: reference_edit
+    technique: editorial-cover
+    target_models: [Gemini, ChatGPT]
+    version: "1.0.0"
+    parameters: [foto, nome_ficticio, chamada, paleta, area_livre, formato]
+  - id: IMG-024
+    title: "Tira fotográfica de quatro quadros"
+    path: prompts/image-editing/compositing/img-024-photobooth-four.md
+    category: image-editing/compositing
+    modality: reference_edit
+    technique: photobooth-four
+    target_models: [Gemini, ChatGPT]
+    version: "1.0.0"
+    parameters: [foto, expressoes, fundo, orientacao, acabamento]
+  - id: IMG-025
+    title: "Scrapbook artesanal"
+    path: prompts/image-editing/compositing/img-025-scrapbook.md
+    category: image-editing/compositing
+    modality: reference_edit
+    technique: scrapbook
+    target_models: [Gemini, ChatGPT]
+    version: "1.0.0"
+    parameters: [fotos, tema, numero_quadros, paleta, decoracoes, formato]
+  - id: IMG-026
+    title: "Díptico passado e presente"
+    path: prompts/image-editing/compositing/img-026-then-now.md
+    category: image-editing/compositing
+    modality: reference_edit
+    technique: then-now
+    target_models: [Gemini, ChatGPT]
+    version: "1.0.0"
+    parameters: [foto_antiga, foto_atual, ano_antigo, ano_atual, divisoria, formato]
+  - id: IMG-027
+    title: "Sticker chibi personalizado"
+    path: prompts/image-editing/artistic/img-027-chibi-sticker.md
+    category: image-editing/artistic
+    modality: reference_edit
+    technique: chibi-sticker
+    target_models: [Gemini, ChatGPT]
+    version: "1.0.0"
+    parameters: [foto, expressao, paleta, acessorio, contorno, fundo]
+  - id: IMG-028
+    title: "Miniatura de vinil colecionável"
+    path: prompts/image-editing/artistic/img-028-vinyl-figure.md
+    category: image-editing/artistic
+    modality: reference_edit
+    technique: vinyl-figure
+    target_models: [Gemini, ChatGPT]
+    version: "1.0.0"
+    parameters: [foto, base, acabamento, acessorios, escala, cenario]
+  - id: IMG-029
+    title: "Avatar pixel art 16-bit"
+    path: prompts/image-editing/artistic/img-029-pixel-art.md
+    category: image-editing/artistic
+    modality: reference_edit
+    technique: pixel-art
+    target_models: [Gemini, ChatGPT]
+    version: "1.0.0"
+    parameters: [foto, grade, paleta, pose, fundo, contorno]
+  - id: IMG-030
+    title: "Aquarela de cena cotidiana"
+    path: prompts/image-editing/artistic/img-030-watercolor.md
+    category: image-editing/artistic
+    modality: reference_edit
+    technique: watercolor
+    target_models: [Gemini, ChatGPT]
+    version: "1.0.0"
+    parameters: [foto, ambiente, paleta, textura_papel, simplificacao]
+  - id: IMG-031
+    title: "Retrato surreal botânico"
+    path: prompts/image-editing/artistic/img-031-botanical-surreal.md
+    category: image-editing/artistic
+    modality: reference_edit
+    technique: botanical-surreal
+    target_models: [Gemini, ChatGPT]
+    version: "1.0.0"
+    parameters: [foto, plantas, area_integracao, paleta, intensidade, fundo]
+  - id: IMG-032
+    title: "Paisagem tilt-shift em miniatura"
+    path: prompts/image-editing/artistic/img-032-tilt-shift.md
+    category: image-editing/artistic
+    modality: reference_edit
+    technique: tilt-shift
+    target_models: [Gemini, ChatGPT]
+    version: "1.0.0"
+    parameters: [foto, faixa_foco, altura_aparente, desfoque, saturacao]
+  - id: IMG-033
+    title: "Cartão-postal de viagem retrô"
+    path: prompts/image-editing/compositing/img-033-retro-postcard.md
+    category: image-editing/compositing
+    modality: reference_edit
+    technique: retro-postcard
+    target_models: [Gemini, ChatGPT]
+    version: "1.0.0"
+    parameters: [foto, destino_confirmado, paleta, tipografia, textura, proporcao]
+  - id: IMG-034
+    title: "Provador virtual sem alterar corpo"
+    path: prompts/image-editing/practical/img-034-virtual-try-on.md
+    category: image-editing/practical
+    modality: reference_edit
+    technique: virtual-try-on
+    target_models: [Gemini, ChatGPT]
+    version: "1.0.0"
+    parameters: [foto, peca, tecido, cor, caimento, areas_protegidas]
+  - id: IMG-035
+    title: "Foto de produto para e-commerce"
+    path: prompts/image-editing/practical/img-035-ecommerce-retouch.md
+    category: image-editing/practical
+    modality: reference_edit
+    technique: ecommerce-retouch
+    target_models: [Gemini, ChatGPT]
+    version: "1.0.0"
+    parameters: [foto, produto, fundo, luz, cor_referencia, formato]

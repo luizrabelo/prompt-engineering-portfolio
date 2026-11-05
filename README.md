@@ -9,7 +9,12 @@ Catálogo global de prompts organizado por finalidade. Cada caso de uso é um ar
 | 01 — Fotografia e imagem | Geração, edição e restauração fotográfica | 10 |
 | [02 — Workflows profissionais](docs/collection-02-workflows.md) | Documentos, reuniões, dados, decisões, planejamento, aprendizagem, carreira, vendas e governança de IA | 16 |
 | [03 — Incident Response](prompts/incident-response/README.md) | Detecção, contenção e erradicação de incidentes | 12 |
-| **Total** | | **38** |
+| [04 — Edição fotográfica e tendências](docs/collection-04-photo-trends.md) | 25 estilos e workflows de edição visual | 25 |
+| **Total** | | **63** |
+
+## Exemplos práticos
+
+[Entradas e saídas esperadas, com critérios de revisão](examples/README.md) — exemplos ilustrativos, não evidências de testes executados.
 
 ## Acesso rápido à coleção 02
 
