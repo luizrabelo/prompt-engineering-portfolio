@@ -8,7 +8,8 @@ Catálogo global de prompts organizado por finalidade. Cada caso de uso é um ar
 | --- | --- | ---: |
 | 01 — Fotografia e imagem | Geração, edição e restauração fotográfica | 10 |
 | [02 — Workflows profissionais](docs/collection-02-workflows.md) | Documentos, reuniões, dados, decisões, planejamento, aprendizagem, carreira, vendas e governança de IA | 16 |
-| **Total** | | **26** |
+| [03 — Incident Response](prompts/incident-response/README.md) | Detecção, contenção e erradicação de incidentes | 12 |
+| **Total** | | **38** |
 
 ## Acesso rápido à coleção 02
 
@@ -29,6 +30,13 @@ Catálogo global de prompts organizado por finalidade. Cada caso de uso é um ar
 - [AIGOV-001 — Priorização de casos de uso de IA](prompts/ai-governance/use-case-prioritization/aigov-001-value-risk-feasibility-gates.md)
 - [AIGOV-002 — Due diligence de fornecedor de IA](prompts/ai-governance/vendor-assessment/aigov-002-claim-evidence-control-mapping.md)
 
+## Coleção 03 — Incident Response
+
+- [Ver os 12 prompts operacionais](prompts/incident-response/README.md) de triagem, investigação, contenção e erradicação.
+- [Catálogo da coleção](prompts/incident-response/catalog.yaml), [cenários sintéticos](prompts/incident-response/examples/) e [rubrica de avaliação](prompts/incident-response/evaluation/rubric.md).
+
+Os prompts exigem evidências rastreáveis, incerteza explícita e aprovação humana para mudanças operacionais.
+
 ## Como usar
 
 1. Selecione o caso pela finalidade, não pelo nome de uma ferramenta.
@@ -44,19 +52,13 @@ Os nomes de modelos são sugestões de uso; não constituem declaração de test
 - `prompts/work/`, `prompts/data-analysis/`, `prompts/decision-making/`: trabalho, análise e decisão.
 - `prompts/productivity/`, `prompts/learning/`, `prompts/career/`: execução e desenvolvimento.
 - `prompts/sales/` e `prompts/ai-governance/`: operações comerciais e governança.
+- `prompts/incident-response/`: resposta a incidentes, exemplos e rubrica.
 - `docs/`: índices e guias de coleções.
 - `templates/`: estrutura reutilizável de novos prompts.
 
 ## Segurança e uso responsável
 
 Não envie dados sigilosos a sistemas não autorizados. Os arquivos podem ser adaptados para diferentes modelos e situações, mas devem ser revisados antes de decisões importantes.
-
-
-## Coleção 02 — Incident Response
-
-Novos **12 prompts operacionais de resposta a incidentes**, organizados por detecção, contenção e erradicação. Consulte [`prompts/incident-response/README.md`](prompts/incident-response/README.md), [`prompts/incident-response/catalog.yaml`](prompts/incident-response/catalog.yaml) e a [rubrica de avaliação](prompts/incident-response/evaluation/rubric.md).
-
-O repositório contém exemplos sintéticos. As recomendações de IA requerem validação humana antes de qualquer alteração operacional.
 
 ## Licença
 
