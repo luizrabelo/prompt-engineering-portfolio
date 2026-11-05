@@ -1,0 +1,94 @@
+schema_version: '1.0'
+project: Prompt Engineering Global Catalog
+organization: function_first_with_metadata
+entries:
+  - id: IMG-001
+    title: "Retrato corporativo"
+    path: prompts/image-generation/professional-portraits/img-001-professional-portrait.md
+    category: image-generation/professional-portraits
+    modality: reference_edit
+    technique: professional-portrait
+    target_models: [Gemini]
+    version: "1.0.0"
+    parameters: [foto_referencia, uso, vestuario, fundo, expressao, enquadramento, proporcao]
+  - id: IMG-002
+    title: "Ensaio editorial"
+    path: prompts/image-generation/creative-portraits/img-002-editorial-photography.md
+    category: image-generation/creative-portraits
+    modality: reference_edit
+    technique: editorial-photography
+    target_models: [Gemini]
+    version: "1.0.0"
+    parameters: [foto_referencia, conceito, paleta, ambiente, figurino, direcao_de_luz, composicao]
+  - id: IMG-003
+    title: "Retrato casual para redes sociais"
+    path: prompts/image-generation/lifestyle/img-003-natural-lifestyle.md
+    category: image-generation/lifestyle
+    modality: reference_edit
+    technique: natural-lifestyle
+    target_models: [Gemini]
+    version: "1.0.0"
+    parameters: [foto_referencia, plataforma, contexto, atividade, roupa, hora_do_dia, proporcao]
+  - id: IMG-004
+    title: "Fotografia de casal ou família"
+    path: prompts/image-generation/family-photography/img-004-multi-person-identity.md
+    category: image-generation/family-photography
+    modality: multi_reference_edit
+    technique: multi-person-identity
+    target_models: [Gemini]
+    version: "1.0.0"
+    parameters: [referencias_individuais, quantidade_pessoas, relacoes, local, atividade, iluminacao, proporcao]
+  - id: IMG-005
+    title: "Preservação de identidade após edição"
+    path: prompts/image-editing/identity-preservation/img-005-identity-anchor-differential.md
+    category: image-editing/identity-preservation
+    modality: two_image_edit
+    technique: identity-anchor-differential
+    target_models: [Gemini]
+    version: "1.0.0"
+    parameters: [foto_original, versao_editada, regiao_protegida, ajustes_a_preservar]
+  - id: IMG-006
+    title: "Substituição de fundo"
+    path: prompts/image-editing/background-replacement/img-006-subject-mask-light-match.md
+    category: image-editing/background-replacement
+    modality: reference_edit
+    technique: subject-mask-light-match
+    target_models: [Gemini]
+    version: "1.0.0"
+    parameters: [imagem_base, novo_fundo, sujeito_protegido, ambiente_luminoso, proporcao]
+  - id: IMG-007
+    title: "Remoção seletiva de objetos"
+    path: prompts/image-editing/object-removal/img-007-localized-inpainting.md
+    category: image-editing/object-removal
+    modality: reference_edit
+    technique: localized-inpainting
+    target_models: [Gemini]
+    version: "1.0.0"
+    parameters: [imagem_base, objeto_remover, regiao_edicao, textura_referencia, elementos_protegidos]
+  - id: IMG-008
+    title: "Expansão de enquadramento"
+    path: prompts/image-editing/outpainting/img-008-outpainting-preserve-canvas.md
+    category: image-editing/outpainting
+    modality: reference_edit
+    technique: outpainting-preserve-canvas
+    target_models: [Gemini]
+    version: "1.0.0"
+    parameters: [imagem_base, direcoes_expansao, proporcao_final, ambiente, elementos_protegidos]
+  - id: IMG-009
+    title: "Correção conservadora de fotografia"
+    path: prompts/image-editing/enhancement/img-009-conservative-photo-correction.md
+    category: image-editing/enhancement
+    modality: reference_edit
+    technique: conservative-photo-correction
+    target_models: [Gemini]
+    version: "1.0.0"
+    parameters: [imagem_base, exposicao, balanco_branco, contraste, nitidez, restricoes]
+  - id: IMG-010
+    title: "Restauração conservadora de fotografia antiga"
+    path: prompts/image-editing/photo-restoration/img-010-historical-restoration.md
+    category: image-editing/photo-restoration
+    modality: reference_edit
+    technique: historical-restoration
+    target_models: [Gemini]
+    version: "1.0.0"
+    parameters: [digitalizacao_original, defeitos_visiveis, nivel_intervencao, tratamento_cor, preservacao_historica]
